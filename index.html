@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p id="Log">Привет! </p> -->
+    <script>
+        // function show5Blocks(){
+        //     for(i=1;i<=5;i++)
+        //     document.write("<h2> Header " + i + "</h2>");
+        // }
+        // show5Blocks();
+
+        // function logAndInc(x) {
+        //     x++;
+        //     Log.innerHTML += "x = " + x + "<br>";
+        // }
+        // var n = +prompt();
+        // logAndInc(n);
+        // alert (n);
+
+
+        // var n = 5;
+        // function cube(x) {
+        //     return Math.pow(x, 3);
+        // }
+        // var m = cube(n);
+        // n = cube(n);
+        // returnn);
+        // return"Ваше число в кубе = " + m);
+
+
+        var x;
+
+        //1
+
+        // function sayError() {
+        //     return"Some error occured!");
+        // }
+        // sayError();
+
+        //2
+
+        // x="Out of memory";
+        // function sayError2(errorMessage) {
+        //     return"Error \"" + errorMessage + "\" occured!");
+        // }
+        // sayError2(x);
+
+
+        //3
+
+        // x = +prompt("Введите кол-во заголовков.");
+        // function createHeaders(N) {
+        //     for (i = 0; i < N; i++)
+        //         document.write("<h2>Header " + (i+1) + "</h2>");     // i+1 указываем, чтобы нумерация заголовка начиналась не с нуля, а с 1
+        // }
+        // createHeaders(x);
+
+
+        //4
+
+        // x = prompt("Введите пароль.");
+        // function checkPassword(enteredPassword) {
+        //     if (enteredPassword == "Step" || enteredPassword == "Web" || enteredPassword == "JavaScript")
+        //         return true;
+        //         else
+        //         return false;
+        // }
+        // if (checkPassword(x))    // эти условия выводим для себя
+        // return"Right password.");
+        // else
+        // return"Wrong password.");
+
+        //5
+
+        //     x = +prompt("Введите число.");
+        //     function sign(enteredNumber) {
+        //         if (enteredNumber > 0)
+        //             return 1;
+        //         else if (enteredNumber < 0)
+        //             return -1;
+        //         else
+        //             return 0;
+        //     }
+        // return sign(x);
+
+        //6
+
+        // x = +prompt("Введите число.");
+        // function weekDay(checkWeekDay) {
+        //     switch (checkWeekDay) {
+        //         case 0: return "Sunday"; break;
+        //         case 1: return "Monday"; break;
+        //         case 2: return "Tuesday"; break;
+        //         case 3: return "Wendsday"; break;
+        //         case 4: return "Thursday"; break;
+        //         case 5: return "Friday"; break;
+        //         case 6: return "Saturday"; break;
+        //         default: return "Wrong number";
+        //     }
+        // }
+        // alert("Week day is " + weekDay(x));
+
+
+
+        //Задача из ДЗ №2
+
+
+        var score = 0;
+        var x = +prompt("1 вопрос. А или Б?\n1. A\n2. Б");
+        if (x == 1)
+            score += 2;
+        var x = +prompt("2 вопрос. Что-нибудь?\n1. Угу.\n2. Не-а\n3. Хмм");
+        if (x == 3)
+            score += 2;
+        var x = +prompt("3 вопрос. Сколько тебе лет?\n1. 10.\n2. -99\n3. 42");
+        if (x == 2)
+            score += 2;
+        switch (score) {
+            case 0: alert("0 баллов"); break;
+            case 2: alert("2 балла"); break;
+            case 4: alert("4 балла"); break;
+            case 6: alert("6 баллов"); break;
+        }
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
